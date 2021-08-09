@@ -1,0 +1,68 @@
+.rock , .paper , .sciccors{
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+.restartAnimation{
+    animation-name: rotateHide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.sciccors :hover{
+    color: blue;
+    font-size: 70px;
+}
+
+.paper :hover{
+    color: blue;
+    font-size: 70px;
+}
+
+
+.rock :hover{
+    color: blue;
+    font-size: 70px;
+}
+
+.result{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.resultBody{
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.winner{
+    font-size: 25px;
+}
+
+#winnerSymbol{
+    font-size: 25px;
+}
+
+.compRes , .cmpChos{
+    font-size: 25px;
+}
+@keyframes  rotateHide {
+    
+    50%{
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}

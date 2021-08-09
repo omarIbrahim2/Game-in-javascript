@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock Paper Sciccors Game</title>
+</head>
+<body>
+  <section class="mt-3 ">
+      <div class="container">
+        <div class="header text-center mb-3">
+            <h1>Rock Paper Siccors</h1>
+            <button id="restartBtn" class="btn btn-info">Restart Game</button>
+        </div>
+        <div class="scores d-flex bg-warning">
+            <div class="palyer bg-primary w-50">
+                  <h4 class="text-center">player : <span class="Pscore">0</span></h4>
+            </div>
+
+            <div class="computer bg-secondary w-50">
+                <h4 class="text-center">Computer : <span class="Cscore">0</span></h4>
+            </div>
+        </div>
+        <h4 class="text-center mt-2">Make your selection</h4>
+    <div class="d-flex justify-content-around">
+        <div class="rock">
+            <i class="fas fa-hand-rock text-center " data-name="rock"></i>
+        </div>
+        <div class="paper">
+            <i class="fas fa-hand-paper text-center" data-name="paper"></i>
+        </div>
+        <div class="sciccors">
+            <i class="fas fa-hand-scissors text-center" data-name="sciccors"></i>
+        </div>
+    </div>
+ </div>
+  
+
+  </section>
+ <div class="result">
+    <div class="resultBody">
+         <p class="winner"></p>
+         <i id="winnerSymbol"></i>
+          <p class="compRes">computer chooses <span class="cmpChos"></span></p>
+
+    </div>
+
+  </div>    
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
